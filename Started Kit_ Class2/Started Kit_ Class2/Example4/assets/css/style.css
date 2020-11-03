@@ -1,0 +1,81 @@
+/* Small Screens (Mobile Default) */
+
+body {
+    background-color: seashell;
+}
+
+#work {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+nav a {
+    margin: 2vw;
+    color: white;
+    text-decoration: none;
+    font-family: Trebuchet;
+    font-weight: 400;
+    font-size: 1em;
+    /* 1em scales proportionally*/
+    text-align: center;
+}
+
+#mobile {
+    display: inline-block;
+}
+
+#desktop {
+    display: none;
+}
+
+.items {
+    width: calc(78vw/3);
+    height: 78vh;
+    background-color: thistle;
+    margin: 1vw;
+    text-align: center;
+}
+
+
+/* For Tablets - Small Screens */
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        background-color: lightblue;
+    }
+    .items {
+        width: calc(76vw);
+        height: calc();
+    }
+}
+
+
+/* For Desktop */
+
+@media all and (min-width: 1201) {
+    body {
+        background-color: lightcyan;
+    }
+}
+
+
+/* For Mobile Devices */
+
+@media all and (max-device-width: 480px) and (orientation: portrait) {
+    body {
+        background-color: yellow;
+    }
+    #mobile {
+        display: inline-block;
+    }
+    #desktop {
+        display: none;
+    }
+}
