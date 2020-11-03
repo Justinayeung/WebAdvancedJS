@@ -1,43 +1,43 @@
 //Tutorial: https://www.youtube.com/watch?v=R1S_NhKkvGA&t=386s
-const textElement = document.getElementById('text')
-const optionButtonsElement = document.getElementById('optionButtons')
+const textElement = document.getElementById('text');
+const optionButtonsElement = document.getElementById('optionButtons');
 
 let state = {}
 
 function startGame() {
-    state = {}
+    state = {};
     showTextNode(1) //Show the first text when starting game
 }
 
 function showTextNode(textNodeIndex) {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex) //Current text nod that you want to show
-    textElement.innerText = textNode.text //Show text
+    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex); //Current text nod that you want to show
+    textElement.innerText = textNode.text; //Show text
     while (optionButtonsElement.firstChild) { //Remove options
-        optionButtonsElement.removeChild(optionButtonsElement.firstChild)
+        optionButtonsElement.removeChild(optionButtonsElement.firstChild);
     }
 
     textNode.options.forEach(option => { //Add options that are needed
         if (showOption(option)) { //Check if you can show the options (options shown based on state)
-            const button = document.createElement('button') //Creating button
-            button.innerText = option.text //Set text
-            button.classList.add('btn') //Make sure it's styled properly
-            button.addEventListener('click', () => selectOption(option)) //Looks for mouse click event
-            optionButtonsElement.appendChild(button)
+            const button = document.createElement('button'); //Creating button
+            button.innerText = option.text; //Set text
+            button.classList.add('btn'); //Make sure it's styled properly
+            button.addEventListener('click', () => selectOption(option)); //Looks for mouse click event
+            optionButtonsElement.appendChild(button);
         }
     })
 }
 
 function showOption(option) {
-    return option.requiredState == null || option.requiredState(state) //Show options
+    return option.requiredState == null || option.requiredState(state); //Show options
 }
 
 function selectOption(option) {
-    const nextTextNodeId = option.nextText
+    const nextTextNodeId = option.nextText;
     if (nextTextNodeId <= 0) { //Restarting game
-        return startGame()
+        return startGame();
     }
-    state = Object.assign(state, option.setState) //Take state we have currently and add everything from option.setState to it and override anything that's already there
-    showTextNode(nextTextNodeId)
+    state = Object.assign(state, option.setState); //Take state we have currently and add everything from option.setState to it and override anything that's already there
+    showTextNode(nextTextNodeId);
 }
 
 //All text nodes
@@ -208,4 +208,4 @@ const textNodes = [{
     }
 ]
 
-startGame()
+startGame();
