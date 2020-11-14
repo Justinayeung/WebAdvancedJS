@@ -45,12 +45,32 @@ body {
         grid-auto-rows: minmax(100px, auto);
     }
     .works {
-        height: 50vh;
+        height: 60vh;
         background-color: #283039;
         border: 3px solid #3A6457;
         color: blanchedalmond;
         text-align: center;
         padding: 1em;
+    }
+    #image {
+        width: 100%;
+        height: 50%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    #Test1 {
+        color: blanchedalmond;
+        text-align: center;
+    }
+    #Test2 {
+        color: blanchedalmond;
+        text-align: center;
+    }
+    #Test3 {
+        color: blanchedalmond;
+        text-align: center;
     }
 }
 
@@ -77,12 +97,32 @@ body {
         grid-auto-rows: minmax(100px, auto);
     }
     .works {
-        height: 50vh;
+        height: 60vh;
         background-color: #283039;
         border: 3px solid #3A6457;
         color: blanchedalmond;
         text-align: center;
         padding: 1em;
+    }
+    #image {
+        width: 100%;
+        height: 45%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    #Test1 {
+        color: blanchedalmond;
+        text-align: center;
+    }
+    #Test2 {
+        color: blanchedalmond;
+        text-align: center;
+    }
+    #Test3 {
+        color: blanchedalmond;
+        text-align: center;
     }
 }
 
@@ -107,11 +147,31 @@ body {
         grid-auto-rows: minmax(100px, auto);
     }
     .works {
-        height: 50vh;
+        height: 60vh;
         background-color: #283039;
         border: 3px solid #3A6457;
         color: blanchedalmond;
         text-align: center;
         padding: 1em;
+    }
+    #image {
+        width: 100%;
+        height: 50%;
+    }
+    img {
+        width: 100%;
+        height: 30vh;
+    }
+    #Test1 {
+        color: blanchedalmond;
+        text-align: center;
+    }
+    #Test2 {
+        color: blanchedalmond;
+        text-align: center;
+    }
+    #Test3 {
+        color: blanchedalmond;
+        text-align: center;
     }
 }
