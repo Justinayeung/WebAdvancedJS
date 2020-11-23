@@ -27,3 +27,8 @@ $("#Text2").append('<h1 class="title">' + data.works[1].title + '</h1><h2 class=
 $("#Text3").append('<h1 class="title">' + data.works[2].title + '</h1><h2 class="programs">' + data.works[2].programs + '</h2><div class="summary">' + data.works[2].summary + '</div>');
 $("#Text4").append('<h1 class="title">' + data.works[3].title + '</h1><h2 class="programs">' + data.works[3].programs + '</h2><div class="summary">' + data.works[3].summary + '</div>');
 $("#Text5").append('<h1 class="title">' + data.works[4].title + '</h1><h2 class="programs">' + data.works[4].programs + '</h2><div class="summary">' + data.works[4].summary + '</div>');
+
+// Itch.attachBuyButton(document.getElementById("download-button""), {
+//     user: "JustinaY",
+//     game: "Paradox"
+// });
