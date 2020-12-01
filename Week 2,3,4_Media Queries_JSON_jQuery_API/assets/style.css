@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+* {
+    font-family: 'Neuton', serif;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -39,7 +44,7 @@ body {
     .work {
         margin: 50px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-row-gap: 1em;
         grid-column-gap: 1em;
         grid-auto-rows: minmax(100px, auto);
